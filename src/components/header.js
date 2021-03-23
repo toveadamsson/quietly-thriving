@@ -1,10 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="header">
-      <h1>LOGO</h1>
-      <NavLink className="buttons" exact to={"/"}>
+      <h1 className="logo">
+          QUIETLY <br /> THRIVING
+        </h1>
+        <h3 className="logo2">WITH NATASCHA HENRIKSEN</h3>
+      {/* <NavLink className="buttons" exact to={"/"}>
         Home
       </NavLink>
 
@@ -18,7 +21,7 @@ const Navbar = () => {
 
       <NavLink className="buttons" exact to={"/contact"}>
         Contact
-      </NavLink>
+      </NavLink> */}
     </div>
   );
 };
