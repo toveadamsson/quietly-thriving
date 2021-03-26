@@ -1,27 +1,25 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className="header">
-      <h1 className="logo">
+      <div className="titel">
+        <h1>
           QUIETLY <br /> THRIVING
         </h1>
-        <h3 className="logo2">WITH NATASCHA HENRIKSEN</h3>
-      {/* <NavLink className="buttons" exact to={"/"}>
-        Home
-      </NavLink>
-
-      <NavLink className="buttons" exact to={"/about"}>
-        About
-      </NavLink>
-
-      <NavLink className="buttons" exact to={"/selection"}>
-        Book a meeting
-      </NavLink>
-
-      <NavLink className="buttons" exact to={"/contact"}>
-        Contact
-      </NavLink> */}
+        <h3>WITH NATASCHA HENRIKSEN</h3>
+      </div>
+      <div className="navigation">
+        <NavLink className="nav-buttons" exact to={"/"}>
+          Home
+        </NavLink>
+        <NavLink className="nav-buttons" exact to={"/about"}>
+          About
+        </NavLink>
+        <NavLink className="nav-buttons" exact to={"/contact"}>
+          Contact
+        </NavLink>
+      </div>
     </div>
   );
 };
