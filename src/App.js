@@ -6,6 +6,7 @@ import Header from "./components/header.js";
 import Home from "./components/home.js";
 import About from "./components/about.js";
 import Contact from "./components/contact.js";
+import Footer from "./components/footer.js";
 
 //*=======APP.JS===========================
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
+        <Footer />
       </Router>
     </div>
   );
